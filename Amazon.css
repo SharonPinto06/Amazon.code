@@ -5,9 +5,11 @@
        background-color: rgb(1, 1, 21);
        margin: 0px;
        padding: 0px;
-       width: 105rem;
+       width: 100rem;
        color: white;
-       margin-left: 2rem;
+       margin-left: 5rem;
+       gap: 40px;
+       margin-top: -1rem;
        }
 
 .icon{
@@ -23,7 +25,7 @@
    }
 
 .Logo{
-     margin-left: -26rem;
+     margin-left: -18rem;
      width: 13rem;
      height: 6rem;
      float: left;
@@ -53,4 +55,103 @@
 .Delivering{ 
            width: 13rem;
            margin-left: 32px;
+}
+
+
+.container1{
+     display: flex;
+     
+}
+
+.navbar2{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       background-color: rgb(4, 4, 63);
+       margin: 0px;
+       padding: 0px;
+       width: 105rem;
+       color: white;
+       margin-left: -1rem;
+       
+}
+
+.list2{
+       list-style-type: none;
+       width: 105rem;
+       display: flex;
+       gap: 80px;
+      }
+
+.carousel{
+     position: relative;
+     width: 100%;
+     max-width: 600px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+.container1{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+
+.carousel-item{
+     position: absolute;
+     width: 100%;
+     opacity: 0;
+     transition: opacity 2s ease-in-out;
+     height: 100%;
+}
+
+.carousel-item img{
+     width: 100rem;
+     height: 15rem;
+     margin-left: -29rem;
+     margin-right: 100rem;
+}
+
+/* Animation for smooth transitions with 20s visibility */ 
+@keyframes blinkImages1 {
+     0%, 20% { opacity: 1; }
+     23%, 100%  { opacity: 0;}
+}
+
+@keyframes blinkImages2{
+     0%, 23% { opacity: 0;}
+     26%, 46% { opacity: 1;}
+     49%, 100% { opacity: 0;}
+}
+
+
+@keyframes blinkImages3{
+     0%, 52% { opacity: 0;}
+     56%, 76% { opacity: 1;}
+     79%, 100% { opacity: 0;}
+}
+
+@keyframes blinkImages4{
+     0%, 82% { opacity: 0;}
+     85%, 100% {opacity: 1;}
+}
+
+/* Apply animation to the Images */
+
+.carousel-item:nth-child(1) {
+     animation: blinkImages1 20s infinite;
+}
+
+.carousel-item:nth-child(2) {
+         animation: blinkImages2 20s infinite;
+}
+
+.carousel-item:nth-child(3) {
+     animation: blinkImages3 20s infinite;
+}
+
+.carousel-item:nth-child(4) {
+     animation: blinkImages4 20s infinite;
 }
